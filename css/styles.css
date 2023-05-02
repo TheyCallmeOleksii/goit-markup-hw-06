@@ -672,7 +672,7 @@ body {
 }
 
 .footer-logo-container {
-  margin-right: 120px;
+  /* margin-right: 120px; */
   align-items: baseline;
 }
 
@@ -711,6 +711,7 @@ body {
 .footer-socials {
   width: 208px;
   margin-right: 120px;
+  margin-left: 80px;
 }
 
 .footel-socail-txt {
@@ -752,6 +753,88 @@ body {
   fill: var(--color-cloud);
 }
 
+.footer-input {
+}
+
+.footer-input-label {
+  display: block;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--color-white);
+  margin-bottom: 16px;
+}
+
+.footer-form-div {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+}
+
+.footer-input-email {
+  display: block;
+  width: 264px;
+  height: 40px;
+  padding: 8px 16px;
+  background-color: var(--color-navy-blue);
+
+  border: 1px solid var(--color-white);
+  border-radius: 4px;
+
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 2;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.04em;
+  color: var(--color-white);
+  outline: 1px solid transparent;
+  outline-offset: -1px;
+
+  transition-property: outline-color;
+  transition-duration: 250px;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-input-email[type='email']::placeholder {
+  color: #ffffff;
+  opacity: 1;
+}
+
+.footer-input-btn {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  max-width: 165px;
+  max-height: 40px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  align-items: center;
+  color: var(--color-white);
+  background-color: var(--color-iris);
+  cursor: pointer;
+  border-radius: 4px;
+  padding: 8px 24px;
+  border: none;
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer-input-btn:hover,
+.footer-input-btn:focus {
+  background-color: var(--color-ocean);
+}
+
+.footer-input-icon {
+  display: flex;
+  color: var(--color-white);
+  gap: 16px;
+}
 /**
   |============================
   | /Footer>
@@ -1116,6 +1199,7 @@ input[type='checkbox']:checked
   text-decoration: underline;
   color: var(--color-iris);
 }
+
 .modal-btn {
   display: block;
   font-weight: 500;
